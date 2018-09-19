@@ -51,7 +51,7 @@ public class PersonDaoImplTest {
 		Mockito.when(personDaoImpl.displayPersonData(Matchers.anyString())).thenReturn(expectedString);
 		final String resultString = personDaoImpl.displayPersonData(expectedString);
 		Mockito.verify(personDaoImpl).displayPersonData(Matchers.anyString());
-		
+		// Assert statement
 		assertNotNull(resultString);
 		assertEquals(expectedString, resultString);		
 	}
